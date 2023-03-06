@@ -1,0 +1,108 @@
+.footerContainer{
+    width: 100%;
+    font-family: system-ui;
+    text-align: start;
+    padding-top: 25px;
+}
+
+.footer{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 25px;
+}
+
+.footerEffect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerEffect span{
+    transform: rotate(45deg);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.footerPolitics{
+    padding: 15px 80px 0 80px;
+    color: #46bc83;
+    text-align: start;
+    text-decoration: underline;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+.footerContainersFlex{
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+}
+
+.div33{
+    flex: 0 0 33%;
+    max-width: 33%;
+    padding: 10px 0 20px 0;
+}
+
+.div33:first-child,
+.div33:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    color: #46bc83;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.terms,
+.privacy{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+}
+
+.terms{
+    color: #46bc83;
+}
+
+.privacy{
+    color: #46bc83;
+}
+
+.div33:last-child{
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 22px;
+    color: #46bc83;
+}
+@media screen and (max-width: 840px) {
+  .footerContainersFlex,
+  .footerPolitics{
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .div33{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+  .footerContainersFlex{
+    flex-direction: column;
+  }
+  .div33:first-child,
+  .div33:last-child{
+    align-items: center;
+    justify-content: center;
+  }
+}

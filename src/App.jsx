@@ -1,20 +1,13 @@
 import React from 'react'
 import './App.css'
-import { AccountIcon, EyeIcon, IgIcon, MailIcon, MoneyIcon, SvgSocialHome, SvgSocialTree, Waves, WppIcon } from './icons/icons'
-import isologo from './assets/isologo.png'
-import logo from './assets/logo.png'
+import { AccountIcon, EyeIcon, MoneyIcon, SvgSocialHome, SvgSocialTree, Waves } from './icons/icons'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
     <main>
-      <header>
-        <a className='logo-desktop' href='#'><img src={isologo} /></a>
-        <a className='logo-mobile' href='#'><img src={logo} /></a>
-        <nav>
-          <a className='loginLink' href='#'>Ingresar</a>
-          <a className='registerLink' href='#'>Registrarse</a>
-        </nav>
-      </header>
+      <Header bgcol='#46bc83' />
       <section className='titlesContainer'>
         <h1>Monetiza tu llegada como influencer</h1>
         <h2>Create un perfil, permite a las empresas a encontrarte y múltiplica tus ingresos como creador de contenido.</h2>
@@ -43,28 +36,7 @@ const App = () => {
         </aside>
       </section>
       <a className='registerLinkBig' href='#'>Crear cuenta</a>
-      <div className='footerContainer'>
-        <a className='footerPolitics' href='/'>Politicas de privacidad.</a>
-        <footer className='footer'>
-          <div className='footerEffect'>
-            <span />
-          </div>
-          <div className='footerContainersFlex'>
-            <div className='div33'>
-              <a className='copyright' href='/'>© Fluspace</a>
-            </div>
-            <div className='div33'>
-              <a className='privacy' href='/'>Politicas de cookies y privacidad</a>
-              <a className='terms' href='/'>Términos y condiciones</a>
-            </div>
-            <div className='div33'>
-              <a href='/'><WppIcon /></a>
-              <a href='/'><IgIcon /></a>
-              <a href='/'><MailIcon /></a>
-            </div>
-          </div>
-        </footer>
-      </div>
+      <Footer />
     </main>
   )
 }

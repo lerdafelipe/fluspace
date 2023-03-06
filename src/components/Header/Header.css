@@ -1,0 +1,59 @@
+header{
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header img{
+    height: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.registerLink{
+    background-color: #7ACBD5;
+    padding: 5px 15px;
+    color: #4A165E;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 18px;
+    box-shadow: 0 2px 2px 0px #00000025;
+}
+.loginLink{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo-mobile{
+    display: none;
+    visibility: none;
+}
+@media screen and (max-width: 840px) {
+  header{
+    padding: 15px 30px;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+  .loginLink, 
+  .registerLink{
+    font-size: 16px;
+  }
+  header img{
+    border-radius: 4px;
+    height: 40px;
+  }
+  .logo-mobile{
+    display: block;
+    visibility: visible;
+  }
+  .logo-desktop{
+    display: none;
+    visibility: none;
+  }
+}

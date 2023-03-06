@@ -16,38 +16,6 @@
     color: #315A46;
     max-width: 80%;
 }
-header{
-    background-color: #46bc83;
-    padding: 15px 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header img{
-    height: 50px;
-    border-radius: 12px;
-    overflow: hidden;
-}
-nav{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-}
-.registerLink{
-    background-color: #7ACBD5;
-    padding: 5px 15px;
-    color: #4A165E;
-    text-decoration: none;
-    border-radius: 3px;
-    font-size: 18px;
-    box-shadow: 0 2px 2px 0px #00000025;
-}
-.loginLink{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
 .registerLinkBig{
     color: #7ACBD5;
     background-color: #4A165E;
@@ -90,102 +58,8 @@ nav{
 .howWork aside svg{
     font-size: 26px;
 }
-.footerContainer{
-    width: 100%;
-    font-family: system-ui;
-    text-align: start;
-    padding-top: 25px;
-}
-
-.footer{
-    width: 100%;
-    background-color: #fff;
-    margin-top: 25px;
-}
-
-.footerEffect{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.footerEffect span{
-    transform: rotate(45deg);
-    background-color: #fff;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-}
-
-.footerPolitics{
-    padding: 15px 80px 0 80px;
-    color: #46bc83;
-    text-align: start;
-    text-decoration: underline;
-    font-size: 15px;
-    letter-spacing: 0.8px;
-}
-
-.footerContainersFlex{
-    display: flex;
-    flex-direction: row;
-    padding: 0 80px;
-}
-
-.div33{
-    flex: 0 0 33%;
-    max-width: 33%;
-    padding: 10px 0 20px 0;
-}
-
-.div33:first-child,
-.div33:last-child{
-    display: flex;
-    align-items: center;
-}
-
-.copyright{
-    color: #46bc83;
-    font-size: 17px;
-    text-decoration: underline;
-}
-
-.terms,
-.privacy{
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    line-height: 1.5rem;
-}
-
-.terms{
-    color: #46bc83;
-}
-
-.privacy{
-    color: #46bc83;
-}
-
-.div33:last-child{
-    justify-content: flex-end;
-    gap: 15px;
-    font-size: 22px;
-    color: #46bc83;
-}
-.logo-mobile{
-    display: none;
-    visibility: none;
-}
-
 @media screen and (max-width: 840px) {
-    .footerContainersFlex,
-    .footerPolitics,
     .titlesContainer,
-    header,
     .howWork{
       padding: 15px 30px;
     }
@@ -196,53 +70,24 @@ nav{
     .titlesContainer h2{
         max-width: 100%;
     }
-    .div33{
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 5px;
-    }
-    .footerContainersFlex{
-        flex-direction: column;
-    }
-    .div33:first-child,
-    .div33:last-child{
-        align-items: center;
-        justify-content: center;
-    }
   }
-  @media screen and (max-width: 500px) {
-    .loginLink, 
-    .registerLink{
-        font-size: 16px;
-    }
-    .titlesContainer h1{
-        font-size: 30px;
-    }
-    .titlesContainer h2,
-    .registerLinkBig{
-        font-size: 16px;
-    }
-    .howWork{
-        flex-direction: column;
-        margin-bottom: 25px;
-    }
-    .howWork aside{
-        flex: 0 0 100%;
-        max-width: 100%;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    header img{
-        border-radius: 4px;
-        height: 40px;
-    }
-    .logo-mobile{
-        display: block;
-        visibility: visible;
-    }
-    .logo-desktop{
-        display: none;
-        visibility: none;
-    }
+@media screen and (max-width: 500px) {
+  .titlesContainer h1{
+    font-size: 30px;
   }
+  .titlesContainer h2,
+  .registerLinkBig{
+    font-size: 16px;
+  }
+  .howWork{
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .howWork aside{
+    flex: 0 0 100%;
+     max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
