@@ -1,5 +1,7 @@
 header{
     padding: 15px 80px;
+    position: absolute;
+    width: calc(100vw - 160px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +27,7 @@ nav{
     box-shadow: 0 2px 2px 0px #00000025;
 }
 .loginLink{
-    color: white;
+    color: #4A165E;
     text-decoration: none;
     font-size: 18px;
 }
@@ -36,6 +38,7 @@ nav{
 @media screen and (max-width: 840px) {
   header{
     padding: 15px 30px;
+    width: calc(100vw - 60px);
   }
 }
 

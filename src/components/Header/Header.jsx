@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = ({ bgcol }) => {
   return (
-    <header style={{ backgroundColor: bgcol || 'transparent' }}>
+    <header style={{ backgroundColor: 'transparent' }}>
       <a className='logo-desktop' href='#'><img src={isologo} /></a>
       <a className='logo-mobile' href='#'><img src={logo} /></a>
       <nav>
