@@ -59,7 +59,9 @@
     font-size: 26px;
 }
 @media screen and (max-width: 840px) {
-    .titlesContainer,
+  .titlesContainer{
+    padding: 130px 30px 80px 30px;
+  }
     .howWork{
       padding: 15px 30px;
     }
