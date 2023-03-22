@@ -1,0 +1,10 @@
+section{
+  min-height: 100vh;
+  padding: 130px 80px 80px 50px;
+}
+.loginContainer{
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+}
