@@ -6,6 +6,7 @@ import Home from './views/home/page'
 import { Route } from 'wouter'
 import Login from './views/login/page'
 import Registro from './views/signup/page'
+import Dashboard from './views/dashboard/page'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/'><Home /></Route>
       <Route path='/login'><Login /></Route>
       <Route path='/signup'><Registro /></Route>
+      <Route path='/dashboard'><Dashboard /></Route>
 
       <Footer />
     </main>
